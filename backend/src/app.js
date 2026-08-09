@@ -8,6 +8,7 @@ import authRoutes from './routes/auth.routes.js';
 import cartRoutes from './routes/cart.routes.js';
 import iotRoutes from './routes/iot.routes.js';
 import transactionRoutes from './routes/transaction.routes.js';
+import analyticsRoutes from './routes/analytics.routes.js';
 
 const app = express();
 
@@ -28,6 +29,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/carts', cartRoutes);
 app.use('/api/iot', iotRoutes);
 app.use('/api/transactions', transactionRoutes);
+app.use('/api/analytics', analyticsRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
