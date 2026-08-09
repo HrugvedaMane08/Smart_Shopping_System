@@ -1,3 +1,9 @@
+import CustomerLayout from '../../layouts/CustomerLayout';
+
 export default function Products() {
-  return <div className="p-8"><h1 className="text-2xl font-bold">Customer Products</h1></div>;
+  return (
+    <CustomerLayout pageTitle="Products">
+      <div className="text-slate-600">Customer products content coming in Step 16.</div>
+    </CustomerLayout>
+  );
 }

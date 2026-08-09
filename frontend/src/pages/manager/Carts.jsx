@@ -1,3 +1,9 @@
+import ManagerLayout from '../../layouts/ManagerLayout';
+
 export default function Carts() {
-  return <div className="p-8"><h1 className="text-2xl font-bold">Manager Active Carts</h1></div>;
+  return (
+    <ManagerLayout pageTitle="Carts">
+      <div className="text-slate-600">Manager carts content coming in Step 17.</div>
+    </ManagerLayout>
+  );
 }

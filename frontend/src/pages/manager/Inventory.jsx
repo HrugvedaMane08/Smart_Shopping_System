@@ -1,3 +1,9 @@
+import ManagerLayout from '../../layouts/ManagerLayout';
+
 export default function Inventory() {
-  return <div className="p-8"><h1 className="text-2xl font-bold">Manager Inventory</h1></div>;
+  return (
+    <ManagerLayout pageTitle="Inventory">
+      <div className="text-slate-600">Manager inventory content coming in Step 17.</div>
+    </ManagerLayout>
+  );
 }

@@ -1,3 +1,9 @@
+import CustomerLayout from '../../layouts/CustomerLayout';
+
 export default function Receipt() {
-  return <div className="p-8"><h1 className="text-2xl font-bold">Customer Receipt</h1></div>;
+  return (
+    <CustomerLayout pageTitle="Receipt">
+      <div className="text-slate-600">Customer receipt content coming in Step 16.</div>
+    </CustomerLayout>
+  );
 }

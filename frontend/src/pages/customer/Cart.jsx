@@ -1,3 +1,9 @@
+import CustomerLayout from '../../layouts/CustomerLayout';
+
 export default function Cart() {
-  return <div className="p-8"><h1 className="text-2xl font-bold">Customer Cart</h1></div>;
+  return (
+    <CustomerLayout pageTitle="My Cart">
+      <div className="text-slate-600">Customer cart content coming in Step 16.</div>
+    </CustomerLayout>
+  );
 }
