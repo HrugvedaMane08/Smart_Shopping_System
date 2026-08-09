@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
 import { errorHandler, notFound } from './middleware/errorHandler.js';
+import productRoutes from './routes/product.routes.js';
 
 import authRoutes from './routes/auth.routes.js';
 
@@ -20,6 +21,7 @@ app.get('/api/health', (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
