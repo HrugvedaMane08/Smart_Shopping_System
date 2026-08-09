@@ -5,6 +5,7 @@ import ProtectedRoute from './components/common/ProtectedRoute';
 // Auth pages
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
+import { ToastProvider } from './context/ToastContext';
 
 // Customer pages
 import CustomerDashboard from './pages/customer/Dashboard';
@@ -26,6 +27,7 @@ import ManagerIotSimulator from './pages/manager/IotSimulator';
 
 function App() {
   return (
+    <ToastProvider>
     <AuthProvider>
       <BrowserRouter>
         <Routes>
@@ -55,6 +57,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </AuthProvider>
+    </ToastProvider>
   );
 }
 
