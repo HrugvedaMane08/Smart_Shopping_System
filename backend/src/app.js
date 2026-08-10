@@ -9,6 +9,7 @@ import cartRoutes from './routes/cart.routes.js';
 import iotRoutes from './routes/iot.routes.js';
 import transactionRoutes from './routes/transaction.routes.js';
 import analyticsRoutes from './routes/analytics.routes.js';
+import alertRoutes from './routes/alert.routes.js';
 
 const app = express();
 
@@ -30,6 +31,7 @@ app.use('/api/carts', cartRoutes);
 app.use('/api/iot', iotRoutes);
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/analytics', analyticsRoutes);
+app.use('/api/alerts', alertRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
