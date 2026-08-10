@@ -8,9 +8,12 @@ export default function Header({ pageTitle }) {
   const handleLogout = () => {
     logout();
     navigate('/login');
+    // Force a reload to cleanly reset any open socket connections and app state
+    window.location.reload();
   };
 
   return (
+    // ...rest unchanged
     <header className="bg-white border-b border-slate-200 px-8 py-4 flex items-center justify-between">
       <h2 className="text-xl font-semibold text-slate-800">{pageTitle}</h2>
 
